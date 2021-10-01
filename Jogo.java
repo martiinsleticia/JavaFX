@@ -1,9 +1,3 @@
-//cenário com um labirinto, um personagem que se move
-//-tratar a colisão nas paredes
-//o personagem se move com os direcionais
-//podendo utilizar o mouse para alguma funcionalidade
-//o personagem não pode sair dos limites da tela
-
 package Jogo;
 
 import java.net.URL;
@@ -200,7 +194,7 @@ public class Jogo extends Application{
 				
 				
 				
-				//tratar colisão
+				//tratar colisÃ£o
 				for (Rectangle2D colisor : colisores) {
 					colidir = colisao(personagem, colisor);
 					if(!colidir) {
@@ -238,13 +232,13 @@ public class Jogo extends Application{
 			
 			@Override
 			public void atualizar() {
-				//fazer a img não sair da tela
+				//fazer a img nÃ£o sair da tela
 				if (x > largura || x < 0) {
-                    x = 30; //30 é a posição inicial do personagem
+                    x = 30; //30 Ã© a posiÃ§Ã£o inicial do personagem
                 }
                 
                 if (y > altura || y < 0) {
-                    y = 30; //30 é a posição inicial do personagem
+                    y = 30; //30 Ã© a posiÃ§Ã£o inicial do personagem
                 }
 				
                 
